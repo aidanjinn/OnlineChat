@@ -48,8 +48,18 @@
 <ul>
     {#each records as record}
         <li><pre>{record.message}</pre></li> 
-        {#if record.file}
+        {#if record.file && !record.file.endsWith('.mp4')}
+            <!-- Display images -->
+            <!-- svelte-ignore a11y-img-redundant-alt -->
             <li><img src={"https://system-giving.pockethost.io/api/files/ewwz4ryyhb4hv1n/" + record.id + "/" + record.file + "?token="} alt="image"></li>
+        {:else if record.file && record.file.endsWith('.mp4')}
+            <!-- Display videos -->
+            <li>
+                <!-- svelte-ignore a11y-media-has-caption -->
+                <video controls width="320" height="240">
+                    <source src={"https://system-giving.pockethost.io/api/files/ewwz4ryyhb4hv1n/" + record.id + "/" + record.file + "?token="} type="video/mp4">
+                </video>
+            </li>
         {/if}
     {/each}
 </ul>
