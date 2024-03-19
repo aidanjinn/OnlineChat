@@ -39,6 +39,9 @@
     }
 </script>
 
+
+
+
 <h1>🤡 ClownChat 🤡</h1>
 
 <!-- Render Message component with event listener -->
@@ -50,3 +53,5 @@
         <li><pre>{record.message}</pre></li> 
     {/each}
 </ul>
+
+
