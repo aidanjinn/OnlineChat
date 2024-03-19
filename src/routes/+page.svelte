@@ -41,12 +41,12 @@
 
 <h1>🤡 ClownChat 🤡</h1>
 
+<!-- Render Message component with event listener -->
+<Message on:messageCreated={handleMessageCreated}/>
+
 <!-- Render the fetched records -->
 <ul>
     {#each records as record}
         <li><pre>{record.message}</pre></li> 
     {/each}
 </ul>
-
-<!-- Render Message component with event listener -->
-<Message on:messageCreated={handleMessageCreated}/>
