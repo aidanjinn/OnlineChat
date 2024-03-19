@@ -39,9 +39,6 @@
     }
 </script>
 
-
-
-
 <h1>🤡 ClownChat 🤡</h1>
 
 <!-- Render Message component with event listener -->
@@ -51,7 +48,8 @@
 <ul>
     {#each records as record}
         <li><pre>{record.message}</pre></li> 
+        {#if record.file}
+            <li><img src={"https://system-giving.pockethost.io/api/files/ewwz4ryyhb4hv1n/" + record.id + "/" + record.file + "?token="} alt="image"></li>
+        {/if}
     {/each}
 </ul>
-
-
