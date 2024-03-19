@@ -12,11 +12,6 @@
 
     async function createMessage() {
         try {
-            // Check if message text is provided
-            if (!messageText.trim()) {
-                errorMessage = 'Please enter message text';
-                return;
-            }
 
             const data = {
                 "message": messageText,
