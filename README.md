@@ -6,7 +6,7 @@
 
 The **Online Chat Application** is a real-time messaging platform built with **Svelte** for the frontend and **PocketBase** for backend data management. It supports text, images, GIFs, videos, and audio, providing a seamless and interactive communication experience.
 
-**Live Demo**: [https://online-chat-application.vercel.app](https://online-chat-application.vercel.app)  
+**Live Demo**: [https://online-chat-application.vercel.app](online-chat-indol.vercel.app)  
 **GitHub Repository**: [https://github.com/aidanjinn/OnlineChat](https://github.com/aidanjinn/OnlineChat)
 
 ---
