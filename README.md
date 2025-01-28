@@ -27,7 +27,6 @@ The **Online Chat Application** is a real-time messaging platform built with **S
 - **Frontend**: Svelte
 - **Backend**: PocketBase
 - **Deployment**: Vercel
-- **Styling**: Tailwind CSS (optional, if used)
 - **Version Control**: Git
 
 ---
